@@ -3,6 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+// variables
+@background1: #C9F9FF;
+@background2: bisque;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,6 +57,49 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+.container{
+	margin: 0 auto;
+	width: 80%;
+header{
+	margin-top: 35px;
+
+	nav{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	 a{
+		text-decoration:none;
+	}		
+}
+}
+.intro{
+	background-color: @background1;
+	padding: 10% 10% 10% 10%;
+	h1{
+		font-size: 3rem;
+		padding: 10% 5% 10% 5%;
+		margin: 4% 10% 4% 10%;
+		background-color: @background2;
+	}
+	p{
+		
+		text-align: center;
+		font-size: 2 rem;
+	}
+}
+.mainContent{
+	.softwares{
+		.work{
+			font-size: 3rem;
+			padding: 10% 5% 10% 5%;
+			margin: 4% 10% 4% 10%;
+			background-color: @background2;
+		}
+	}
+
+}
+	
+}
