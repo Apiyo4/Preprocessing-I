@@ -3,6 +3,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+// variables
+@background1: #C9F9FF;
+@background2: bisque;
+//mixins
+.flexMixin{
+	display: flex;
+	justify-content: space-between;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,9 +40,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+// ol, ul {
+// 	list-style: none;
+// }
 blockquote, q {
 	quotes: none;
 }
@@ -54,6 +62,138 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+.container{
+	margin: 0 auto;
+	width: 80%;
+	background-color: @background2;
+header{
+	// margin-top: 35px;
+
+	nav{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	 a{
+		text-decoration:none;
+	}		
+}
+}
+.intro{
+	background-color: @background1;
+	padding: 4% 10% 10% 10%;
+	h1{
+		font-size: 3rem;
+		padding: 10% 5% 10% 5%;
+		margin: 4% 10% 0 10%;
+		background-color: @background2;
+	}
+	p{
+		padding-top: 24px;
+		text-align: center;
+		font-size: 8 rem;
+	}
+}
+.mainContent{
+	background-color: @background2;
+	margin: 0 0 0 0;
+	padding: 0 10% 0 10%;
+	.work{
+	
+		font-size: 2rem;
+		padding: 4% 5% 0 5%;
+		margin: 0 10% 0 30%;
+}
+	.softwares{
+		.flexMixin();
+			.matatu{
+				width: 40%;
+				// padding-left: 10%;
+				h2{
+					font-size: 2rem;
+					padding: 4% 5% 0 5%;
+				}
+				img{
+					height: 200px;
+
+				}
+				p{
+					padding-top: 10px;
+					a{
+						text-decoration: none; 
+					}
+				}
+				
+			}
+			.afro{
+				width: 40%;
+				// padding-right: 10%;
+				h2{
+					font-size: 2rem;
+					padding: 4% 5% 0 5%;
+				}
+				img{
+					height: 200px;
+				}
+				p{
+					padding-top: 10px;
+					a{
+						text-decoration: none; 
+					}
+				}
+				#space1{
+					padding-top: 24px;
+				}
+			}
+			}
+	.skills{
+		h2{
+			font-size: 2rem;
+			padding: 4% 5% 0 5%;
+			text-align: center;
+		}
+		.technical{
+			.flexMixin();
+			.left, .right,.middle{
+				width: 100%;
+				img{
+					height: 150px;
+					width:150px;
+					margin-right: 10px; 
+					margin-top: 10px;
+				}
+			}
+			
+		}
+		.personal{
+			ul{
+			padding-top: 20px;	
+			}
+		}
+		}
+	}
+	#contact{
+		padding-top: 30px;
+		h2{
+			font-size: 2rem;
+			padding: 4% 5% 3% 5%;
+			text-align: center;
+		}
+		address{
+			padding: 1% 5% 4% 10%;
+		}
+
+	}
+	.footer{
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
+	
+	
+	
+
+	
+	

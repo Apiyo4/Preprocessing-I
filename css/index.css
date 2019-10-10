@@ -1,1 +1,253 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.flexMixin {
+  display: flex;
+  justify-content: space-between;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: bisque;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container header nav a {
+  text-decoration: none;
+}
+.container .intro {
+  background-color: #C9F9FF;
+  padding: 4% 10% 10% 10%;
+}
+.container .intro h1 {
+  font-size: 3rem;
+  padding: 10% 5% 10% 5%;
+  margin: 4% 10% 0 10%;
+  background-color: bisque;
+}
+.container .intro p {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 8 rem;
+}
+.container .mainContent {
+  background-color: bisque;
+  margin: 0 0 0 0;
+  padding: 0 10% 0 10%;
+}
+.container .mainContent .work {
+  font-size: 2rem;
+  padding: 4% 5% 0 5%;
+  margin: 0 10% 0 30%;
+}
+.container .mainContent .softwares {
+  display: flex;
+  justify-content: space-between;
+}
+.container .mainContent .softwares .matatu {
+  width: 40%;
+}
+.container .mainContent .softwares .matatu h2 {
+  font-size: 2rem;
+  padding: 4% 5% 0 5%;
+}
+.container .mainContent .softwares .matatu img {
+  height: 200px;
+}
+.container .mainContent .softwares .matatu p {
+  padding-top: 10px;
+}
+.container .mainContent .softwares .matatu p a {
+  text-decoration: none;
+}
+.container .mainContent .softwares .afro {
+  width: 40%;
+}
+.container .mainContent .softwares .afro h2 {
+  font-size: 2rem;
+  padding: 4% 5% 0 5%;
+}
+.container .mainContent .softwares .afro img {
+  height: 200px;
+}
+.container .mainContent .softwares .afro p {
+  padding-top: 10px;
+}
+.container .mainContent .softwares .afro p a {
+  text-decoration: none;
+}
+.container .mainContent .softwares .afro #space1 {
+  padding-top: 24px;
+}
+.container .mainContent .skills h2 {
+  font-size: 2rem;
+  padding: 4% 5% 0 5%;
+  text-align: center;
+}
+.container .mainContent .skills .technical {
+  display: flex;
+  justify-content: space-between;
+}
+.container .mainContent .skills .technical .left,
+.container .mainContent .skills .technical .right,
+.container .mainContent .skills .technical .middle {
+  width: 100%;
+}
+.container .mainContent .skills .technical .left img,
+.container .mainContent .skills .technical .right img,
+.container .mainContent .skills .technical .middle img {
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.container .mainContent .skills .personal ul {
+  padding-top: 20px;
+}
+.container #contact {
+  padding-top: 30px;
+}
+.container #contact h2 {
+  font-size: 2rem;
+  padding: 4% 5% 3% 5%;
+  text-align: center;
+}
+.container #contact address {
+  padding: 1% 5% 4% 10%;
+}
+.container .footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
